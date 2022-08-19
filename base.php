@@ -4,7 +4,7 @@ session_start();
 
 class DB
 {
-    protected $dsn="mysql:host=localhost;charset=utf8;dbname=db15";
+    protected $dsn="mysql:host=localhost;charset=utf8;dbname=db01";
     protected $user='root';
     protected $pw='';
     public $table;
