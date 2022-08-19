@@ -248,7 +248,12 @@ if(isset($do)){
     $Str=new Str($do);
 }
 
-
+if(empty($_SESSION['view'])){
+    $view=$Total->find(1);
+    $_SESSION['view']=1;
+    $view['total']++;
+    $Total->save($view);
+}
 
 
 ?>
